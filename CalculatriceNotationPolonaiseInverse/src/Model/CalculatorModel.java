@@ -44,5 +44,14 @@ public class CalculatorModel {
             System.out.println("There are not enough elements to make a swap");
         }
     }
+    
+ // Method to drop the element at the top of the stack
+    public void drop() {
+        if (!stack.isEmpty()) {
+            stack.pop();
+        } else {
+            System.out.println("The stack is empty");
+        }
+    }
 
 }
