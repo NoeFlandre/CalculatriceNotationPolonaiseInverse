@@ -16,4 +16,14 @@ public class CalculatorModel {
     	stack.push(value);
         
     }
+    
+ // Method to pop an element out of the stack
+    public void pop() {
+        if (!stack.isEmpty()) {
+            stack.pop();
+        } 
+        else {
+            System.out.println("The stack is empty");
+        }
+    }
 }
