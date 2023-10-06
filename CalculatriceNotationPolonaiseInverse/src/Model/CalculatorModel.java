@@ -53,5 +53,17 @@ public class CalculatorModel {
             System.out.println("The stack is empty");
         }
     }
+    
+ // Method to add the last two elements of the stack and put the result back in the stack
+    public void add() {
+        if (stack.size() >= 2) {
+            double topElement = stack.pop();
+            double secondTopElement = stack.pop();
+            double result = topElement + secondTopElement;
+            stack.push(result);
+        } else {
+            System.out.println("There are not enough elements in the stack to make an addition");
+        }
+    }
 
 }
