@@ -26,4 +26,9 @@ public class CalculatorModel {
             System.out.println("The stack is empty");
         }
     }
+    
+ // Method to clear the stack 
+    public void clear() {
+        stack.clear();
+    }
 }
