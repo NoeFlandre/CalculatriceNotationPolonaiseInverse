@@ -31,4 +31,18 @@ public class CalculatorModel {
     public void clear() {
         stack.clear();
     }
+    
+ // Method to swap the two elements at the top of the stack 
+    public void swap() {
+        if (stack.size() >= 2) {
+            double topElement = stack.pop();
+            double secondTopElement = stack.pop();
+            stack.push(topElement);
+            stack.push(secondTopElement);
+        } 
+        else {
+            System.out.println("There are not enough elements to make a swap");
+        }
+    }
+
 }
