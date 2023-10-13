@@ -124,8 +124,7 @@ public class CalculatorModel implements CalculatorModelInterface {
 
  // Return a copy of the stack
     public Stack<Double> getStack() {
-        
-        return new Stack<>(stack);
+        return stack;
     }
  
  // Return a copy of the accumulator
