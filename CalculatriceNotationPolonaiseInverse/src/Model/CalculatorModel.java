@@ -45,14 +45,16 @@ public class CalculatorModel {
         }
     }
     
- // Method to drop the element at the top of the stack
+    // Method to remove the last element from the stack without returning it
     public void drop() {
         if (!stack.isEmpty()) {
-            stack.pop();
+            int lastIndex = stack.size() - 1;
+            stack.remove(lastIndex);
         } else {
-            System.out.println("The stack is empty");
+            System.out.println("The stack is empty.");
         }
     }
+    
     
  // Method to add the last two elements of the stack and put the result back in the stack
     public void add() {
@@ -62,7 +64,7 @@ public class CalculatorModel {
             double result = topElement + secondTopElement;
             stack.push(result);
         } else {
-            System.out.println("There are not enough elements in the stack to make an addition");
+            System.out.println("There are not enough elements in the stack to add");
         }
     }
 
