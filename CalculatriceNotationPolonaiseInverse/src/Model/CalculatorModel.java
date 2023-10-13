@@ -11,6 +11,7 @@ public class CalculatorModel implements CalculatorModelInterface {
 	// Constructor of the class CalculatorModel
 	public CalculatorModel() {		
 		stack = new Stack<>();
+		accumulator = 0.0;
     }
 	
 	// Method to add an element in the stack
