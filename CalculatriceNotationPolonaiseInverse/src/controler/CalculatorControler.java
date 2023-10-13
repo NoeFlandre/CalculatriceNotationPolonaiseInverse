@@ -59,12 +59,16 @@ public class CalculatorControler implements CalculatorControlerInterface {
 
 	 
 	  public static void main(String[] args) {
-	        CalculatorControler calculator = new CalculatorControler();
+		  System.out.println("Bonjour");
+		  
+		  CalculatorControler calculator = new CalculatorControler();
 	        
 	        calculator.performOperation("3");
 	        calculator.performOperation("5");
 	        calculator.performOperation("add");
-	        calculator.model.getAccumulator();
+	        calculator.performOperation("2");
+	        calculator.performOperation("multiply");
+	        System.out.println(calculator.model.getAccumulator());
 	        
 	    }
 

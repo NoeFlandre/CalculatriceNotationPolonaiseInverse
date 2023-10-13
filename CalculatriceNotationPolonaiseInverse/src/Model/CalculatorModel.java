@@ -119,6 +119,7 @@ public class CalculatorModel implements CalculatorModelInterface {
             double secondTopElement = stack.pop();
             double result = secondTopElement * topElement;
             stack.push(result);
+            accumulator = stack.peek();
         } else {
             System.out.println("There are not enough elements in the stack to multiply.");
         }
