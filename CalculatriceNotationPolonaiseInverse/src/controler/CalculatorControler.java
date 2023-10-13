@@ -44,7 +44,16 @@ public class CalculatorControler implements CalculatorControlerInterface {
 	            case "opposite":
 	                model.opposite();
 	                break;
+	            
 	        }
 	 }
+	 
+	  public static void main(String[] args) {
+	        CalculatorControler calculator = new CalculatorControler();
+
+	        calculator.performOperation("add");
+	        calculator.performOperation("subtract");
+	        calculator.performOperation("add");
+	    }
 
 }
