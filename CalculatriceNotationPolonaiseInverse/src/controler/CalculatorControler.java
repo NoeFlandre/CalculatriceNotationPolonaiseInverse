@@ -26,8 +26,14 @@ public class CalculatorControler implements CalculatorControlerInterface {
 		System.out.println("Stack changed to: " + stackData);
 	}
 	
-	 public void performOperation(String operation) {
-	        // Handle the operation and call the corresponding methods in the model.
+	public void performOperation(String operation) {
+	    // Check if the operation is a number represented as a string
+	    try {
+	        double number = Double.parseDouble(operation);
+	        // Push the number onto the stack
+	        stack.push(number);
+	    } catch (NumberFormatException e) {
+	        // If it's not a number, then perform the operation
 	        switch (operation) {
 	            case "add":
 	                model.add();
@@ -35,7 +41,7 @@ public class CalculatorControler implements CalculatorControlerInterface {
 	            case "subtract":
 	                model.subtract();
 	                break;
-	            case "multipy":
+	            case "multiply":
 	                model.multiply();
 	                break;
 	            case "divide":
@@ -44,9 +50,13 @@ public class CalculatorControler implements CalculatorControlerInterface {
 	            case "opposite":
 	                model.opposite();
 	                break;
-	            
+	            default:
+	            	System.out.println("Invalid operation: " + operation);
+	                break;
 	        }
-	 }
+	    }
+	}
+
 	 
 	  public static void main(String[] args) {
 	        CalculatorControler calculator = new CalculatorControler();
