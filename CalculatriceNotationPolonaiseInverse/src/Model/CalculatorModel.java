@@ -107,6 +107,18 @@ public class CalculatorModel {
         }
     }
 
+ // Method to multiply the last two elements of the stack and put the result back in the stack
+    public void multiply() {
+        if (stack.size() >= 2) {
+            double topElement = stack.pop();
+            double secondTopElement = stack.pop();
+            double result = secondTopElement * topElement;
+            stack.push(result);
+        } else {
+            System.out.println("There are not enough elements in the stack to multiply.");
+        }
+    }
+
 
 
 
