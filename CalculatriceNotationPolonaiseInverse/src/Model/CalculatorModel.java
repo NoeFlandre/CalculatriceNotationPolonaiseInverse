@@ -5,6 +5,8 @@ import java.util.Stack;
 public class CalculatorModel implements CalculatorModelInterface {
 	// Attribute representing the stack of the calculator
 	private Stack<Double> stack;
+	// Attribute representing the accumulator of the calculator
+	private double accumulator;
     
 	// Constructor of the class CalculatorModel
 	public CalculatorModel() {		
