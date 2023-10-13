@@ -119,6 +119,11 @@ public class CalculatorModel implements CalculatorModelInterface {
         }
     }
 
+ // Return a copy of the stack to avoid
+    public Stack<Double> getStack() {
+        
+        return new Stack<>(stack);
+    }
 
 
 
