@@ -95,6 +95,18 @@ public class CalculatorModel {
             System.out.println("There are not enough elements in the stack to divide.");
         }
     }
+    
+ // Method to negate (change sign) of the last element on the stack
+    public void opposite() {
+        if (!stack.isEmpty()) {
+            double topElement = stack.pop();
+            double result = -topElement;
+            stack.push(result);
+        } else {
+            System.out.println("The stack is empty.");
+        }
+    }
+
 
 
 
