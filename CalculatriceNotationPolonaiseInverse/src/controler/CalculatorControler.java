@@ -5,6 +5,12 @@ import Model.CalculatorModel;
 import Model.CalculatorModelInterface;
 
 public class CalculatorControler implements CalculatorControlerInterface {
+	
+	private CalculatorModel model;
+	
+	public CalculatorControler() {
+        model = new CalculatorModel(); // Initialize the calculator model
+    }
 
 	@Override
 	public void change(String accu) {
