@@ -14,14 +14,16 @@ public class CalculatorControler implements CalculatorControlerInterface {
 
 	@Override
 	public void change(String accu) {
-		// TODO Auto-generated method stub
+		// Method handling the changes on the accumulator due to the user's input and displaying it 
 		
+		System.out.println("Accumulator changed to: " + accu);
 	}
 
 	@Override
 	public void change(Stack<Double> stackData) {
-		// TODO Auto-generated method stub
+		// Method handling the changes on the stack due to the user's input and displaying it 
 		
+		System.out.println("Stack changed to: " + stackData);
 	}
 
 }
