@@ -68,6 +68,10 @@ public class CalculatorControler implements CalculatorControlerInterface {
 	        calculator.performOperation("add");
 	        calculator.performOperation("2");
 	        calculator.performOperation("multiply");
+	        calculator.performOperation("4");
+	        calculator.performOperation("divide");
+	        calculator.performOperation("1");
+	        calculator.performOperation("subtract");
 	        System.out.println(calculator.model.getAccumulator());
 	        
 	    }
