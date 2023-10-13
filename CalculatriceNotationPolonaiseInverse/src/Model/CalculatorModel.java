@@ -80,6 +80,8 @@ public class CalculatorModel implements CalculatorModelInterface {
             double secondTopElement = stack.pop();
             double result = secondTopElement - topElement;
             stack.push(result);
+            accumulator = stack.peek();
+
         } else {
             System.out.println("There are not enough elements in the stack to subtract.");
         }
@@ -93,6 +95,8 @@ public class CalculatorModel implements CalculatorModelInterface {
             if (topElement != 0) {
                 double result = secondTopElement / topElement;
                 stack.push(result);
+                accumulator = stack.peek();
+
             } else {
                 System.out.println("Division by zero is not allowed.");
             }
@@ -107,6 +111,8 @@ public class CalculatorModel implements CalculatorModelInterface {
             double topElement = stack.pop();
             double result = -topElement;
             stack.push(result);
+            accumulator = stack.peek();
+
         } else {
             System.out.println("The stack is empty.");
         }
