@@ -31,7 +31,7 @@ public class CalculatorControler implements CalculatorControlerInterface {
 	    try {
 	        double number = Double.parseDouble(operation);
 	        // Push the number onto the stack
-	        stack.push(number);
+	        model.push(number);
 	    } catch (NumberFormatException e) {
 	        // If it's not a number, then perform the operation
 	        switch (operation) {
@@ -64,6 +64,7 @@ public class CalculatorControler implements CalculatorControlerInterface {
 	        calculator.performOperation("3");
 	        calculator.performOperation("5");
 	        calculator.performOperation("add");
+	        calculator.model.getAccumulator();
 	        
 	    }
 
