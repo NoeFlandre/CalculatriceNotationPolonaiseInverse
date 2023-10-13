@@ -60,10 +60,11 @@ public class CalculatorControler implements CalculatorControlerInterface {
 	 
 	  public static void main(String[] args) {
 	        CalculatorControler calculator = new CalculatorControler();
-
+	        
+	        calculator.performOperation("3");
+	        calculator.performOperation("5");
 	        calculator.performOperation("add");
-	        calculator.performOperation("subtract");
-	        calculator.performOperation("add");
+	        
 	    }
 
 }
