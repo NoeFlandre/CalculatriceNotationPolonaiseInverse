@@ -79,6 +79,23 @@ public class CalculatorModel {
             System.out.println("There are not enough elements in the stack to subtract.");
         }
     }
+    
+ // Method to divide the last two elements of the stack and put the result back in the stack
+    public void divide() {
+        if (stack.size() >= 2) {
+            double topElement = stack.pop();
+            double secondTopElement = stack.pop();
+            if (topElement != 0) {
+                double result = secondTopElement / topElement;
+                stack.push(result);
+            } else {
+                System.out.println("Division by zero is not allowed.");
+            }
+        } else {
+            System.out.println("There are not enough elements in the stack to divide.");
+        }
+    }
+
 
 
 }
