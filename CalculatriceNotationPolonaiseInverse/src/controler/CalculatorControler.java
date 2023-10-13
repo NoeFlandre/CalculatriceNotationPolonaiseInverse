@@ -25,5 +25,26 @@ public class CalculatorControler implements CalculatorControlerInterface {
 		
 		System.out.println("Stack changed to: " + stackData);
 	}
+	
+	 public void performOperation(String operation) {
+	        // Handle the operation and call the corresponding methods in the model.
+	        switch (operation) {
+	            case "add":
+	                model.add();
+	                break;
+	            case "subtract":
+	                model.subtract();
+	                break;
+	            case "multipy":
+	                model.multiply();
+	                break;
+	            case "divide":
+	                model.divide();
+	                break;
+	            case "opposite":
+	                model.opposite();
+	                break;
+	        }
+	 }
 
 }
